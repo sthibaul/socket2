@@ -82,6 +82,7 @@ pub(crate) use libc::IP_HDRINCL;
 #[cfg(not(any(
     target_os = "dragonfly",
     target_os = "fuchsia",
+    target_os = "hurd",
     target_os = "illumos",
     target_os = "netbsd",
     target_os = "openbsd",
@@ -112,6 +113,7 @@ pub(crate) use libc::{
 #[cfg(not(any(
     target_os = "dragonfly",
     target_os = "haiku",
+    target_os = "hurd",
     target_os = "netbsd",
     target_os = "openbsd",
     target_os = "redox",
@@ -226,6 +228,7 @@ type IovLen = usize;
     target_os = "freebsd",
     target_os = "fuchsia",
     target_os = "haiku",
+    target_os = "hurd",
     target_os = "illumos",
     target_os = "netbsd",
     target_os = "openbsd",
